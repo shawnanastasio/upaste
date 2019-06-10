@@ -1,0 +1,8 @@
+{
+    "ListenAddress": "0.0.0.0",
+    "ListenPort": 8080,
+    "expiryDays": 100,
+    "maxPasteSizeBytes": 1048576,
+    "serverURL": "https://example.com",
+    "fileStorePath": "/home/myuser/upaste_store"
+}
