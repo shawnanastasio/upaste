@@ -31,6 +31,7 @@ import (
     "math/rand"
     "io/ioutil"
     "net/http"
+    "time"
     textTemplate "text/template"
     htmlTemplate "html/template"
 )
@@ -178,6 +179,9 @@ func errorHandler(w http.ResponseWriter, r *http.Request, status int) {
 func StartServer(c Config) {
     // Initialize things from config
     globalConfig = c
+
+    // Seed the RNG
+    rand.Seed(time.Now().UTC().UnixNano())
 
     // Start cleaner thread
     go StartCleaner(c)
