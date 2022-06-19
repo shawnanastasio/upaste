@@ -26,6 +26,7 @@ package main
 // Index page served to curl/wget (plain text)
 const IndexTemplateText =
 `upaste(1)                          UPASTE                          upaste(1)
+
 NAME
     upaste: simple command line pastebin.
 
@@ -61,6 +62,7 @@ const IndexTemplateHTML =
 <body>
 <pre>
 upaste(1)                          UPASTE                          upaste(1)
+
 NAME
     upaste: simple command line pastebin.
 
